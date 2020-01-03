@@ -1,0 +1,30 @@
+cabal-version:       >=1.10
+name:                gap-buffer
+version:             0.1.0.0
+-- synopsis:
+-- description:
+-- bug-reports:
+license:             BSD3
+license-file:        LICENSE
+author:              Koki Yasuno
+maintainer:          epiteff@gmail.com
+-- copyright:
+category:            Data
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+library
+  exposed-modules:     Data.GapBuffer
+  -- other-modules:
+  -- other-extensions:
+  build-depends:       base >=4.12 && <4.13
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+
+test-suite spec
+  default-language:    Haskell2010
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base >=4.12 && <4.13
+                     , hspec
